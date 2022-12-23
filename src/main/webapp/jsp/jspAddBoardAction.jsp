@@ -6,6 +6,7 @@
 	String title = request.getParameter("title");
 	String content = request.getParameter("content");
 	// System.out.println(title);
+	// System.out.println(content);
 	
 	// 드라이버 로딩
 	Class.forName("org.mariadb.jdbc.Driver");
@@ -27,5 +28,5 @@
 		System.out.println("추가실패");
 	}
 	
-	response.sendRedirect(request.getContextPath()+"/jsp/jspBoardList.jsp");
+	response.sendRedirect(request.getContextPath()+"/AddBoardActionController");
 %>

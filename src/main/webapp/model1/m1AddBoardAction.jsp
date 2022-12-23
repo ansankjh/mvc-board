@@ -6,7 +6,7 @@
 	request.setCharacterEncoding("utf-8");
 	String title = request.getParameter("title");
 	String content = request.getParameter("content");
-	// System.out.println(title);
+	System.out.println(title + " <-- AddBoardActionController.doPost.title");
 	// System.out.println(content);
 	
 	// 메서드 호출 매개값
